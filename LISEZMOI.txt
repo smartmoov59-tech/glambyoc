@@ -1,0 +1,23 @@
+﻿GLAMBYOC - site vitrine (statique, sans back-end, aucun abonnement)
+=====================================================================
+Ouvrir : index.html (double-clic) ou publier le dossier tel quel.
+Publication Cloudflare Pages : deposer glambyoc-site.zip (index.html a la racine).
+
+Structure
+- index.html            page unique (SEO + donnees structurees NailSalon)
+- css/style.css         direction artistique (palette, typo, sections)
+- js/main.js            animations (GSAP, ScrollTrigger, Lenis) + carte + reservation
+- js/vendor/            GSAP 3.12.5, ScrollTrigger, Lenis 1.1.13 (heberges, pas de CDN)
+- img/                  photos reelles (p*.jpg, oceane.jpg, cover.jpg) + ambiance Pexels (s*.jpg) + hero-poster.jpg
+- video/hero.mp4        video d'entree (Pexels, libre de droits, 1080p, 9 s)
+
+Reservation
+- Bouton principal : Fresha (le moteur de reservation d'Oceane, confirmation instantanee)
+  https://www.fresha.com/book-now/glambyoc-wxa9vv0m/all-offer?share=true&pId=2553105
+- Alternative : SMS pre-rempli (sms:+33658847561) et appel (tel:), generes par le planificateur.
+
+Modifier les prix / avis : tableau MENU et REVIEWS en haut de js/main.js.
+
+A faire apres mise en ligne
+- Ajouter dans index.html (JSON-LD, og:image) l'URL absolue du site et de l'image.
+- Verifier les horaires : Fresha indique 10h-19h lun-sam ; Google Maps indiquait une ouverture a 9h le vendredi.
